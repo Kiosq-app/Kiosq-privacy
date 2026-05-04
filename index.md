@@ -1,177 +1,171 @@
-# Politique de confidentialité — Kiosq
+# Privacy Policy — Kiosq
 
-**Dernière mise à jour : 4 mai 2026**
+**Last updated: May 4, 2026**
 
-Cette politique décrit comment l'application **Kiosq** (« l'Application »,
-éditée par [Gaïalabx]) gère vos données. En utilisant
-Kiosq, vous acceptez les pratiques décrites ci-dessous.
+This policy describes how the **Kiosq** application ("the App", published
+by Gaïalabx) handles your data. By using Kiosq, you accept the practices
+described below.
 
-Notre principe : **vos données vous appartiennent**. Kiosq fonctionne
-majoritairement hors ligne, sans publicité, sans pistage, et sans envoi
-de votre comportement de lecture à des tiers.
+Our principle: **your data belongs to you**. Kiosq works mostly offline,
+without ads, without tracking, and without sending your reading
+behavior to third parties.
 
-## 1. Données stockées localement sur votre appareil
+## 1. Data stored locally on your device
 
-L'Application stocke localement (base Hive chiffrée par Android) :
+The App locally stores (Hive database, sandboxed by Android):
 
-- Vos flux RSS / chaînes vidéo / podcasts configurés
-- Vos catégories, sujets (mots-clés d'alerte) et favoris
-- L'historique des articles téléchargés (purgé selon votre réglage,
-  30 jours par défaut)
-- Vos préférences d'affichage et de lecture
-- Vos statistiques de lecture (articles lus, série quotidienne)
-- La progression de lecture des podcasts
-- Les images et contenus mis en cache pour la lecture hors ligne
+- Your configured RSS feeds / video channels / podcasts
+- Your categories, subjects (alert keywords) and favorites
+- Article history downloaded (purged according to your setting,
+  30 days by default)
+- Your display and reading preferences
+- Your reading statistics (articles read, daily streak)
+- Podcast playback progress
+- Cached images and content for offline reading
 
-Ces données ne quittent **jamais** votre appareil sauf si vous activez
-explicitement la sauvegarde cloud (cf. section 2).
+This data **never** leaves your device unless you explicitly enable
+cloud backup (see section 2).
 
-## 2. Sauvegarde cloud Google Drive (optionnel)
+## 2. Google Drive cloud backup (optional)
 
-Si vous activez la sauvegarde cloud, l'Application :
+If you enable cloud backup, the App:
 
-- Authentifie votre compte Google via OAuth (jeton stocké uniquement sur
-  votre appareil)
-- Sauvegarde votre configuration (flux, catégories, sujets, paramètres)
-  dans le **dossier réservé à Kiosq** de votre Google Drive personnel.
-  Aucun autre dossier n'est lisible.
-- Permet la restauration sur un nouvel appareil
+- Authenticates your Google account via OAuth (token stored only on
+  your device)
+- Backs up your configuration (feeds, categories, subjects, settings)
+  to the **Kiosq-restricted folder** of your personal Google Drive.
+  No other folder is accessible.
+- Allows restoration on a new device
 
-Vos données ne transitent **jamais** par nos serveurs : la communication
-est directe entre votre appareil et l'API Google Drive. Vous restez
-propriétaire et contrôlez l'accès via votre compte Google.
+Your data **never** transits through our servers: communication is
+direct between your device and Google Drive's API. You retain ownership
+and access control via your Google account.
 
-Pour révoquer l'accès : Paramètres Kiosq → Synchronisation, ou via
+To revoke access: Kiosq Settings → Sync, or via
 [myaccount.google.com](https://myaccount.google.com/permissions).
 
-## 3. Rapports de crash anonymes (Firebase Crashlytics)
+## 3. Anonymous crash reports (Firebase Crashlytics)
 
-Pour améliorer la stabilité, l'Application peut envoyer **automatiquement**
-des rapports techniques en cas de plantage. Ces rapports contiennent :
+To improve stability, the App may **automatically** send technical
+reports in case of a crash. These reports contain:
 
-- La trace technique du plantage (stack trace)
-- La version de l'Application et la version d'Android
-- Le modèle de votre appareil
-- Votre langue système
-- Un identifiant **anonyme et local** (UUID généré sur votre appareil,
-  non lié à votre identité, votre compte ou votre numéro de téléphone)
+- The technical crash trace (stack trace)
+- The App version and Android version
+- Your device model
+- Your system language
+- An **anonymous and local** identifier (UUID generated on your device,
+  not linked to your identity, account, or phone number)
 
-**Aucune donnée personnelle, aucun contenu d'article ni aucun comportement
-de lecture n'est envoyé.**
+**No personal data, no article content, and no reading behavior is sent.**
 
-Ce service est fourni par Firebase Crashlytics (Google). Politique
-Google : [policies.google.com/privacy](https://policies.google.com/privacy).
+This service is provided by Firebase Crashlytics (Google). Google's
+policy: [policies.google.com/privacy](https://policies.google.com/privacy).
 
-**Vous pouvez désactiver à tout moment** cette collecte dans
-Paramètres → Général → Confidentialité → Rapports de crash.
+**You can disable this collection at any time** in
+Settings → General → Privacy → Crash reports.
 
-## 4. Service de traduction d'articles (à la demande)
+## 4. Article translation service (on demand)
 
-Lorsque vous tappez « Traduire » sur un article, le texte de cet article
-est envoyé à l'API publique Google Translate
-(`translate.googleapis.com`) pour traduction. Aucun identifiant utilisateur
-n'est joint à la requête.
+When you tap "Translate" on an article, the article text is sent to
+Google Translate's public API (`translate.googleapis.com`) for
+translation. No user identifier is attached to the request.
 
-Cette communication n'a lieu **que** lors d'un tap explicite. Aucun
-texte n'est envoyé en arrière-plan.
+This communication only occurs on **explicit tap**. No text is sent
+in the background.
 
-## 5. Affichage de pages web (WebView)
+## 5. Web page rendering (WebView)
 
-Pour la lecture en mode « Web » d'un article, l'Application charge la
-page d'origine de l'article dans un composant WebView Android. Le site
-distant peut alors poser ses propres cookies, ses analytics ou ses
-publicités (pratiques propres à chaque éditeur). Ces cookies sont isolés
-de votre navigateur principal et peuvent être effacés via les paramètres
-système Android.
+For "Web" reading mode of an article, the App loads the article's
+original page in an Android WebView component. The remote site may
+then set its own cookies, analytics, or ads (practices specific to
+each publisher). These cookies are isolated from your main browser
+and can be cleared via Android system settings.
 
-## 6. Achats intégrés (donations)
+## 6. In-app purchases (donations)
 
-Si vous effectuez un don pour soutenir l'Application, la transaction est
-gérée intégralement par Google Play Billing. Nous ne recevons **aucune
-donnée bancaire**, uniquement la confirmation que la transaction a abouti.
+If you make a donation to support the App, the transaction is fully
+handled by Google Play Billing. We receive **no banking data**, only
+the confirmation that the transaction succeeded.
 
 ## 7. Notifications
 
-Les notifications (nouveaux articles, alertes Sujets) sont **générées
-localement** par votre appareil. Elles ne nécessitent aucun serveur de
-push externe. Vous pouvez les désactiver via Paramètres Kiosq ou les
-réglages système Android.
+Notifications (new articles, Subject alerts) are **generated locally**
+by your device. They require no external push server. You can disable
+them via Kiosq Settings or Android system settings.
 
-## 8. Données que nous NE collectons PAS
+## 8. Data we do NOT collect
 
-L'Application **ne collecte ni ne transmet** :
+The App **does not collect or transmit**:
 
-- Votre localisation
-- Vos contacts, votre agenda, vos SMS, vos photos, votre micro, votre caméra
-- Votre identifiant publicitaire (Advertising ID)
-- Votre historique de navigation
-- Vos comportements de lecture (quels articles, à quelle heure, etc.)
-- Votre carnet de favoris à des fins commerciales
+- Your location
+- Your contacts, calendar, SMS, photos, microphone, camera
+- Your advertising identifier (Advertising ID)
+- Your browsing history
+- Your reading behaviors (which articles, at what time, etc.)
+- Your favorites for commercial purposes
 
-Aucune publicité n'est affichée. Aucun pixel de pistage n'est intégré.
+No ads are displayed. No tracking pixel is integrated.
 
-## 9. Permissions Android demandées
+## 9. Android permissions requested
 
-| Permission | Pourquoi |
+| Permission | Purpose |
 |---|---|
-| Accès Internet | Synchronisation des flux RSS |
-| État du réseau | Détection Wi-Fi vs cellulaire (option « sync uniquement Wi-Fi ») |
-| Notifications (Android 13+) | Alertes nouveaux articles |
-| Service en avant-plan | Lecture audio podcasts |
-| Wake lock | Maintenir la lecture audio active |
-| Démarrage automatique | Reprise des tâches de synchronisation après redémarrage |
-| Vibreur | Notifications |
-| Achats intégrés | Donations |
+| Internet access | RSS feed synchronization |
+| Network state | Wi-Fi vs cellular detection ("Wi-Fi only sync" option) |
+| Notifications (Android 13+) | New article alerts |
+| Foreground service | Podcast audio playback |
+| Wake lock | Keep audio playback active |
+| Auto-start | Resume sync tasks after restart |
+| Vibrate | Notifications |
+| In-app billing | Donations |
 
-## 10. Conservation des données
+## 10. Data retention
 
-- Données locales : conservées tant que l'Application est installée.
-  Suppression complète via la désinstallation ou Paramètres → Données →
-  Réinitialiser.
-- Sauvegarde cloud : conservée tant que vous le souhaitez. Suppression
-  via Paramètres → Synchronisation → Supprimer la sauvegarde cloud.
-- Rapports de crash : conservés 90 jours par Firebase Crashlytics, puis
-  supprimés automatiquement.
+- Local data: kept as long as the App is installed. Complete deletion
+  via uninstall or Settings → Data → Reset.
+- Cloud backup: kept as long as you wish. Deletion via Settings → Sync
+  → Delete cloud backup.
+- Crash reports: kept 90 days by Firebase Crashlytics, then automatically
+  deleted.
 
-## 11. Vos droits (RGPD)
+## 11. Your rights (GDPR)
 
-Conformément au RGPD, vous disposez des droits suivants :
+In accordance with GDPR, you have the following rights:
 
-- **Accès** : toutes vos données sont visibles dans l'Application elle-même.
-- **Rectification** : modifiez vos paramètres directement dans l'Application.
-- **Suppression** : désinstallez l'Application, ou effacez la sauvegarde
-  cloud, ou désactivez Crashlytics.
-- **Portabilité** : exportez vos flux au format OPML via Paramètres →
-  Données → Exporter.
-- **Opposition** : désactivez Crashlytics (Paramètres → Confidentialité)
-  ou la synchronisation cloud à tout moment.
+- **Access**: all your data is visible within the App itself.
+- **Rectification**: modify your settings directly in the App.
+- **Deletion**: uninstall the App, or delete the cloud backup, or
+  disable Crashlytics.
+- **Portability**: export your feeds in OPML format via Settings →
+  Data → Export.
+- **Objection**: disable Crashlytics (Settings → Privacy) or cloud
+  sync at any time.
 
-Pour toute question relative à vos données : [kiosqrssatm@gmail.com].
+For any data-related question: kiosqrssatm@gmail.com.
 
-## 12. Enfants
+## 12. Children
 
-L'Application n'est pas destinée aux enfants de moins de 13 ans et ne
-collecte sciemment aucune donnée d'enfant. Si vous êtes parent et pensez
-que votre enfant a fourni des données, contactez-nous pour suppression.
+The App is not intended for children under 13 and does not knowingly
+collect any data from children. If you are a parent and believe your
+child has provided data, contact us for deletion.
 
-## 13. Sécurité
+## 13. Security
 
-Vos données locales sont stockées dans le sandbox de l'Application (zone
-réservée à l'app par Android). Les communications réseau utilisent HTTPS.
-La sauvegarde cloud transite directement entre votre appareil et Google
-Drive, sans serveur intermédiaire.
+Your local data is stored in the App's sandbox (Android-reserved area).
+Network communications use HTTPS. Cloud backup transits directly between
+your device and Google Drive, with no intermediate server.
 
-Aucun système n'étant infaillible, nous ne pouvons garantir une sécurité
-absolue, mais nous appliquons les pratiques standard du secteur.
+Since no system is foolproof, we cannot guarantee absolute security,
+but we apply industry-standard practices.
 
-## 14. Modifications de cette politique
+## 14. Changes to this policy
 
-Toute modification sera publiée à cette URL avec une date de mise à
-jour. Pour les changements substantiels, nous afficherons une notification
-dans l'Application au prochain démarrage.
+Any modification will be published at this URL with an update date.
+For substantial changes, we will display a notification in the App on
+next launch.
 
 ## 15. Contact
 
-[Gaïalabx]
-Email : [kiosqrssatm@gmail.com]
-Application : Kiosq (com.gaialabx.kiosq)
+Gaïalabx
+Email: kiosqrssatm@gmail.com
+App: Kiosq (com.gaialabx.kiosq)
